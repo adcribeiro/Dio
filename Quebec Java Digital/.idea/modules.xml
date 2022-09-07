@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AulaCast/AulaCast.iml" filepath="$PROJECT_DIR$/AulaCast/AulaCast.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Quebec Java Digital.iml" filepath="$PROJECT_DIR$/.idea/Quebec Java Digital.iml" />
     </modules>
   </component>

@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ExerLista/ExerLista.iml" filepath="$PROJECT_DIR$/ExerLista/ExerLista.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExerMetodo/ExerMetodo.iml" filepath="$PROJECT_DIR$/ExerMetodo/ExerMetodo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExerSobrecarga/ExerSobrecarga.iml" filepath="$PROJECT_DIR$/ExerSobrecarga/ExerSobrecarga.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Quebec Java Digital.iml" filepath="$PROJECT_DIR$/.idea/Quebec Java Digital.iml" />
-      <module fileurl="file://$PROJECT_DIR$/exerMetodo/exerMetodo.iml" filepath="$PROJECT_DIR$/exerMetodo/exerMetodo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/exerSobrecarga/exerSobrecarga.iml" filepath="$PROJECT_DIR$/exerSobrecarga/exerSobrecarga.iml" />
     </modules>
   </component>
 </project>

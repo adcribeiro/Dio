@@ -1,7 +1,5 @@
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import javax.sql.rowset.serial.SerialRef;
+import java.util.*;
 
 public class manOrdenaLista {
     public static void main(String[] args) {
@@ -15,7 +13,7 @@ public class manOrdenaLista {
         for (Series serie : minhasSeries)
             System.out.println(serie.getNome() + " - "
                     + serie.getGenero() + " - " + serie.getTempoEpisodio());
-        System.out.println();
+        System.out.println("-----------------------------------");
 
         System.out.println("Ordem de inserção");
         Set<Series> minhasSeries1 = new LinkedHashSet<>() {{
@@ -23,22 +21,40 @@ public class manOrdenaLista {
             add(new Series("dark", "drama", 60));
             add(new Series("that '70s show", "comédia", 25));
         }};
-        for (
-                Series serie : minhasSeries1)
+        for (Series serie : minhasSeries1)
             System.out.println(serie.getNome() + " - "
                     + serie.getGenero() + " - " + serie.getTempoEpisodio());
-        System.out.println();
+        System.out.println("-----------------------------------");
 
 
-        System.out.println("Ordem Natural(tempo de episodio");
+        System.out.println("\bOrdem Natural(tempo de episodio\b");
         Set<Series> minhasSeries2 = new TreeSet<>(minhasSeries1);
-        for (
-                Series serie : minhasSeries2)
+        for (Series serie : minhasSeries2)
             System.out.println(serie.getNome() + " - "
                     + serie.getGenero() + " - " + serie.getTempoEpisodio());
+        System.out.println("-----------------------------------");
 
+        System.out.println("\bOrdem Nome/Genero/TempoEpisodio\b");
+        Set<Series> minhasSeries3 = new TreeSet<>(new ComparatorNomeGeneroTempoEpisodio());
+        minhasSeries3.addAll(minhasSeries);
+        for (Series serie : minhasSeries3)
+            System.out.println(serie.getNome() + " - "
+                    + serie.getGenero() + " - " + serie.getTempoEpisodio());
+        System.out.println("----------------------------------");
 
+        System.out.println(" Ordem por Genero");
+        Set<Series> minhasSeries4 = new TreeSet<>(new ComparatorGenero());
+        minhasSeries4.addAll(minhasSeries);
+        for (Series serie : minhasSeries4)
+            System.out.println(serie.getNome() + " - "
+                    + serie.getGenero() + " - " + serie.getTempoEpisodio());
+        System.out.println("-----------------------------------");
 
+        System.out.println("Ordenar por tempo de Episodio");
+        Set<Series> minhaSeries5 = new TreeSet<>(minhasSeries);
+        for (Series serie : minhaSeries5)
+            System.out.println(serie.getNome() + " - "
+                    + serie.getGenero() + " - " + serie.getTempoEpisodio());
 
     }
 }

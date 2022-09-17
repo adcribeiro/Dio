@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ExerLista/ExerLista.iml" filepath="$PROJECT_DIR$/ExerLista/ExerLista.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExerMap/ExerMap.iml" filepath="$PROJECT_DIR$/ExerMap/ExerMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/ExerMetodo/ExerMetodo.iml" filepath="$PROJECT_DIR$/ExerMetodo/ExerMetodo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ExerSet/ExerSet.iml" filepath="$PROJECT_DIR$/ExerSet/ExerSet.iml" />
       <module fileurl="file://$PROJECT_DIR$/ExerSobrecarga/ExerSobrecarga.iml" filepath="$PROJECT_DIR$/ExerSobrecarga/ExerSobrecarga.iml" />
